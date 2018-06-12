@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reto Cypher Code</title>
+    <!--Enlazar a CSS-->
+      <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <!--Agregar encabezado-->
+  <h1>Encripta con Código César</h1>
+  <!--Establecer bloque para los objetos de formulario-->
+  <form>
+    <!--Agregar Input para introducir la palabra a codificar y el onclick para la funcion-->
+    <p><input type="text" id="encriptar" onclick="encriptarPalabra" value="" placeholder="Introduce en mayúsculas">
+    </p></input>
+    <!--Agregar Input del offset(key) con el que vamos a cifrar-->
+    <p><input type="number" id="key" value="" placeholder="¿Cuál es la llave?" >
+    </p></input>
+    <!--Agregar Input para mostrar el resultado de encriptación-->
+    <p><input type="text" id="resultado" onclick="desencriptarPalabra()" value="" placeholder="Tú código es:">
+    </p></input>
+
+  </form>  
+  <script type="text/javascript" src="app.js">
+  </script>
+  </body>
+</html>
